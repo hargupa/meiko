@@ -2,36 +2,46 @@
 
 class Usuario
 {
-	  protected $codigo;		
-	  protected $nombres;
-  	  protected $apellidos;
-  	  protected $email;
-  	  protected $perfil;
+	  protected $Codigo;		
+	  protected $Nombres;
+  	  protected $Apellidos;
+  	  protected $Email;
+  	  protected $Password;
+  	  protected $Pais;
+  	  protected $Perfil;
 
-  	  public function  __construct()
-  	  {
 
-  	  }
+	public function getCodigo()
+	  {
+	    return $this->Codigo;
+	  }	
+
+	public function setCodigo($Codigo)
+	  {
+	    $this->Codigo=$Codigo;
+	  }
+
+
 
 
 	public function getNombres()
 	  {
-	    return $this->nombres;
+	    return $this->Nombres;
 	  }	
 
-	public function setNombres($nombres)
+	public function setNombres($Nombres)
 	  {
-	    $this->nombres=$nombres;
+	    $this->Nombres=$Nombres;
 	  }
 
 	public function getApellidos()
 	  {
-	    return $this->apellidos;
+	    return $this->Apellidos;
 	  }	
 
-	public function setApellidos($apellidos)
+	public function setApellidos($Apellidos)
 	  {
-	    $this->apellidos=$apellidos;
+	    $this->Apellidos=$Apellidos;
 	  }
 
 	public function getEmail()
@@ -41,23 +51,51 @@ class Usuario
 
 	public function setEmail($Email)
 	  {
-	    $this->Email=$apellidos;
+	    $this->Email=$Email;
 	  }
+
+	public function getPassword()
+	  {
+	    return $this->Password;
+	  }	
+
+	public function setPassword($Password)
+	  {
+	    $this->Password=$Password;
+	  }
+
+
+	public function getPais()
+	  {
+	    return $this->Pais;
+	  }	
+
+	public function setPais($Pais)
+	  {
+	    $this->Pais=$Pais;
+	  }
+
 
 	public function getPerfil()
 	  {
-	    return $this->perfil;
+	    return $this->Perfil;
 	  }	
 
-	public function setperfil($perfil)
+	public function setPerfil($Perfil)
 	  {
-	    $this->perfil=$perfil;
+	    $this->Perfil=$Perfil;
 	  }
 
 
 
 }
 
+/*$user = new Usuario();
+$user->setNombres('Sumadre');
+$user->setNombres('Supadre');
+
+echo $user->getNombres[0];
+*/
 
 
 

@@ -1,6 +1,6 @@
    <?php
         
-        $configuracion_db = require_once 'config/config.php';
+        $configuracion_db = require_once '../config/config.php';
 
         $mysqli = new mysqli($configuracion_db["host"], $configuracion_db["usuario"],$configuracion_db["password"],$configuracion_db["database"]);
 

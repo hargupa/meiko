@@ -42,8 +42,7 @@ CREATE TABLE IF NOT EXISTS `tusuarios` (
 --
 
 INSERT INTO `tusuarios` (`id_usuario`, `nombre`, `apellidos`, `password`, `email`, `pais`, `perfil`) VALUES
-(1, 'g', 'gfds', 'gfds', 'gdfs', 'Bahamas', 'Administrador'),
-(2, 'g', 'gfds', 'gfds', 'gdfs', 'Bahamas', 'Administrador');
+(1, 'usuario', 'usuario', '123456', 'usuario', 'Bahamas', 'Administrador'),
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

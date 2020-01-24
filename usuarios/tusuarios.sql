@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS `tusuarios` (
 -- Volcado de datos para la tabla `tusuarios`
 --
 
-INSERT INTO `tusuarios` (`id_usuario`, `nombre`, `apellidos`, `password`, `email`, `pais`, `perfil`) VALUES
-(1, 'usuario', 'usuario', '123456', 'usuario', 'Bahamas', 'Administrador'),
+INSERT INTO `tusuarios` (`nombre`, `apellidos`, `password`, `email`, `pais`, `perfil`) VALUES
+('usuario', 'usuario', '123456', 'usuario', 'Bahamas', 'Administrador')
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

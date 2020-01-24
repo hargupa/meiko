@@ -86,9 +86,11 @@
 </div>
  &nbsp&nbsp
 
-
-    <button type="button" class="btn btn-primary px-3" title="Guardar" onclick="Guardar();" id="guardar"><i class="far fa-save"></i></button>&nbsp&nbsp
-
+	<?php 
+			if ($_SESSION["perfil"]=='Administrador'){
+				echo '<button type="button" class="btn btn-primary px-3" title="Guardar" onclick="Guardar();" id="guardar"><i class="far fa-save"></i></button>&nbsp&nbsp';
+			}	
+	?>
   </div>
   <br>
   <div id="formContent">
@@ -123,9 +125,10 @@
                         echo '<td>'.$row[3].'</td>';
                         echo '<td>'.$row[4].'</td>';
                         echo '<td><div class="input-group-append">';
-                        echo '<button type="button" class="btn btn-primary px-3" title="Modificar" onclick="modificar('.$row[5].')"><i class="far fa-edit"></i></button>&nbsp&nbsp';
-                        echo '<button type="button" class="btn btn-primary px-3" title="Eliminar" onclick="Eliminar('.$row[5].')"><i class="far fa-trash-alt"></i></button></td></tr>';
-
+                        if ($_SESSION["perfil"]=='Administrador'){
+							echo '<button type="button" class="btn btn-primary px-3" title="Modificar" onclick="modificar('.$row[5].')"><i class="far fa-edit"></i></button>&nbsp&nbsp';
+							echo '<button type="button" class="btn btn-primary px-3" title="Eliminar" onclick="Eliminar('.$row[5].')"><i class="far fa-trash-alt"></i></button></td></tr>';
+						}
                         
                     }
                     echo'    </tr>
